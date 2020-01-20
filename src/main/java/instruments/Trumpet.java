@@ -8,6 +8,10 @@ public class Trumpet extends Instrument{
         this.numberOfValves = numberOfValves;
     }
 
+    public int getNumberOfValves() {
+        return numberOfValves;
+    }
+
     public String play() {
         return "Tarantara!";
     }
