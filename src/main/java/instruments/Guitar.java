@@ -7,4 +7,8 @@ public class Guitar extends Instrument {
         super(material, colour, instrumentType, sellPrice, buyPrice);
         this.numberOfStrings = numberOfStrings;
     }
+
+    public int getNumberOfStrings() {
+        return numberOfStrings;
+    }
 }
