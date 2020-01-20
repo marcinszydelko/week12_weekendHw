@@ -15,5 +15,5 @@ public abstract class Instrument {
         this.buyPrice = buyPrice;
     }
 
-    
+
 }
