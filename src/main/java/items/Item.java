@@ -1,6 +1,8 @@
 package items;
 
-public class Item {
+import behaviours.ISell;
+
+public class Item implements ISell {
     private String type;
     private int sellPrice;
     private int buyPrice;
@@ -21,5 +23,9 @@ public class Item {
 
     public int getBuyPrice() {
         return buyPrice;
+    }
+
+    public int calculateMarkup() {
+        return this.sellPrice - this.buyPrice;
     }
 }

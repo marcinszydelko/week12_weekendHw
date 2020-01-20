@@ -1,6 +1,9 @@
 package instruments;
 
-public abstract class Instrument {
+import behaviours.IPlay;
+import behaviours.ISell;
+
+public abstract class Instrument implements ISell, IPlay {
     private String material;
     private String colour;
     private InstrumentType instrumentType;
@@ -34,4 +37,10 @@ public abstract class Instrument {
     public int getBuyPrice() {
         return buyPrice;
     }
+
+    public int calculateMarkup() {
+        return this.sellPrice - this.buyPrice;
+    }
+
+
 }

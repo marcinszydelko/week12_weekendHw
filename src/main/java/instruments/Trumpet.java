@@ -7,4 +7,8 @@ public class Trumpet extends Instrument{
         super(material, colour, instrumentType, sellPrice, buyPrice);
         this.numberOfValves = numberOfValves;
     }
+
+    public String play() {
+        return "Tarantara!";
+    }
 }

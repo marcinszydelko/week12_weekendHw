@@ -10,7 +10,7 @@ public class GuitarTest {
 
     @Before
     public void before() {
-        guitar = new Guitar("wood", "yellow", InstrumentType.STRING, 300, 250, 6);
+        guitar = new Guitar("wood", "black", InstrumentType.STRING, 300, 250, 6);
     }
 
     @Test
@@ -20,7 +20,7 @@ public class GuitarTest {
 
     @Test
     public void shouldGetColour() {
-        assertEquals("yellow", guitar.getColour());
+        assertEquals("black", guitar.getColour());
     }
 
     @Test
@@ -41,5 +41,10 @@ public class GuitarTest {
     @Test
     public void shouldGetNumberOfStrings() {
         assertEquals(6, guitar.getNumberOfStrings());
+    }
+
+    @Test
+    public void shouldGetGuitarsSound() {
+        assertEquals("Dum", guitar.play());
     }
 }

@@ -27,4 +27,9 @@ public class ItemTest {
     public void shouldHaveBuyPrice() {
         assertEquals(15, drumSticks.getBuyPrice());
     }
+
+    @Test
+    public void shouldCalculateMarkup() {
+        assertEquals(5, drumSticks.calculateMarkup());
+    }
 }
